@@ -22,7 +22,7 @@ const handler = async (m, { conn, usedPrefix, command }) => {
       type: 1,
     },
     {
-      buttonId: `${usedPrefix}code`,
+      buttonId: `${usedPrefix}CHATGPT`,
       buttonText: { displayText: "🤖 CHATGPT" },
       type: 1,
     },
