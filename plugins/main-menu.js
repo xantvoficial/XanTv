@@ -165,7 +165,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
         buttonText: { displayText: "TODAVIA NO SE QUE" },
         type: 1,
       },      {
-        buttonId: `${_p}grupos`,
+        buttonId: `${_p}LISTADECUENTASENVENTAS`,
         buttonText: { displayText: "LISTA DE CUENTAS EN VENTA" },
         type: 1,
       },
