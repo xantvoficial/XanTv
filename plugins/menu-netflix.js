@@ -45,8 +45,7 @@ const handler = async (m, { conn, usedPrefix, command }) => {
       externalAdReply: {
         title: "🎥 XanTV - dv yer 🌌",
         body: "Haz clic para unirte a nuestros grupos y aprovechar más ofertas",
-        thumbnailUrl: 'https://qu.ax/hcjnp.jpg',
-        sourceUrl: "https://github.com/El-brayan502/NagiBotV2", // Puedes cambiar este enlace por tu repo si tienes uno
+        sourceUrl: "https://github.com/king123XZ/XanTv", // Puedes cambiar este enlace por tu repo si tienes uno
         mediaType: 1,
         renderLargerThumbnail: true
       }
