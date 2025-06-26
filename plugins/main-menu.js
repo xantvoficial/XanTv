@@ -42,26 +42,35 @@ let tags = {
 };
 
 const defaultMenu = {
-  before:  `--------[ *I N F O - U S E R* ]----------
+  before: `
+╭─「 🧑‍💻 *I N F O - U S U A R I O* 」
+│ 👤  Nombre      : %name
+│ 🧪  Experiencia : %exp XP
+│ 🎯  Nivel       : %level
+╰───────────────⬣
 
-▧ Nᴏᴍʙʀᴇ : %name
-▧ Exᴘᴇʀɪᴇɴᴄɪᴀ: %exp
-▧ Nɪᴠᴇʟ : %level
-
---------[ *I N F O - B OT Z* ]----------
-
-▧ Esᴛᴀᴅᴏ : Modo Público
-▧ Bᴀɪʟᴇʏs : Baileys MD
-▧ Aᴄᴛɪᴠᴏ : %muptime
-▧ Usᴜᴀʀɪᴏs : %totalreg
+╭─「 🤖 *I N F O - B O T* 」
+│ 📺  Nombre      : XanTV
+│ 👨‍💻  Creador     : dv yer
+│ 🌐  Estado      : Modo Público
+│ 📡  Motor       : Baileys MD
+│ ⏱️  Activo      : %muptime
+│ 👥  Usuarios    : %totalreg
+╰───────────────⬣
 
 %readmore
 `.trimStart(),
-header: '┏━━━━━━━━━━━━━━━━\n┃%category\n┣━━━━━━━━━━━━━━━━',
-  body: '┃ %cmd',
-  footer: '┗━━━━━━━━━━━━━━━━',
-  after: `© ${textbot}`,
+
+  header: `
+╭━━━〔 📂 %category 〕━━━⬣`,
+
+  body: `┃ ✦ %cmd`,
+
+  footer: `╰━━━━━━━━━━━━━━━━━━⬣`,
+
+  after: `\n🧠 _Desarrollado por_ dv yer para *XanTV* 🚀`
 };
+
 
 let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   try {
@@ -181,8 +190,8 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
       },
     ];
 
-    let img = 'https://qu.ax/JhdYp.jpg';
-    await m.react('⚽️');
+    let img = 'https://n.uguu.se/OysQmQMP.jpg';
+    await m.react('✅');
 
     await conn.sendMessage(
       m.chat,
@@ -190,7 +199,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
         image: { url: img },
         caption: menuText,
         buttons: buttons,
-        footer: "NᴀɢɪBᴏᴛ-ᴍD x Bʀᴀʏᴀɴ Y Cʟᴀʀɪᴛᴀ",
+        footer: "XanTv dv yer",
         viewOnce: true,
       },
       { quoted: m }
@@ -201,9 +210,9 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   }
 };
 
-handler.help = ['allmenu'];
+handler.help = ['menu'];
 handler.tags = ['main'];
-handler.command = ['allmenu', 'menucompleto', 'menúcompleto', 'help', 'menu2'];
+handler.command = ['menu'];
 handler.register = true;
 export default handler;
 
