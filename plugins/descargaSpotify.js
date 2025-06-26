@@ -9,49 +9,33 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   let msg = await m.reply('🔄 Cargando... 10%');
 
   try {
-    // Simula progreso de carga
+    // Simulación de carga en pasos
     await new Promise(r => setTimeout(r, 1000));
     await conn.sendMessage(m.chat, { edit: msg.key, text: '🔄 Cargando... 50%' });
 
     await new Promise(r => setTimeout(r, 1000));
     await conn.sendMessage(m.chat, { edit: msg.key, text: '🔄 Cargando... 100%' });
 
-    // Llamada a la API
+    // Llamada real a la API
     let res = await fetch(`https://api.nekorinn.my.id/downloader/spotifyplay?q=${encodeURIComponent(text)}`);
-    if (!res.ok) throw '❌ Error al buscar la canción.';
+    if (!res.ok) throw `❌ Error al buscar la canción. Intenta nuevamente.`;
 
     let data = await res.json();
-    let result = data.result;
+    if (!data.result || !data.result.downloadUrl) {
+      throw `❌ No se encontró una canción con ese nombre.`;
+    }
 
-    if (!result || !result.downloadUrl) throw '❌ No se encontró la canción.';
-
-    // Descarga la imagen de portada como buffer
-    let img = await fetch(result.thumbnail);
-    let thumbnail = await img.buffer();
-
-    // Enviar audio con imagen de portada
     await conn.sendMessage(m.chat, {
-      audio: { url: result.downloadUrl },
+      audio: { url: data.result.downloadUrl },
       mimetype: 'audio/mpeg',
-      ptt: false,
-      fileName: `${result.title || 'spotify'}.mp3`,
-      contextInfo: {
-        externalAdReply: {
-          title: result.title || 'Spotify',
-          body: result.artists || '',
-          thumbnail,
-          mediaType: 2,
-          mediaUrl: result.url || '',
-          sourceUrl: result.url || ''
-        }
-      }
+      fileName: `${data.result.title || 'spotify'}.mp3`,
     }, { quoted: m });
 
-    await conn.sendMessage(m.chat, { edit: msg.key, text: '✅ ¡Listo! Canción enviada con portada.' });
+    await conn.sendMessage(m.chat, { edit: msg.key, text: '✅ ¡Listo! Canción enviada con éxito.' });
     await m.react('✅');
   } catch (e) {
     console.error('[SPOTIFY ERROR]', e);
-    await conn.sendMessage(m.chat, { edit: msg.key, text: typeof e === 'string' ? e : '⚠️ Error al procesar tu solicitud.' });
+    await conn.sendMessage(m.chat, { edit: msg.key, text: typeof e === 'string' ? e : '⚠️ Hubo un problema al procesar tu solicitud.' });
     await m.react('❌');
   }
 };
