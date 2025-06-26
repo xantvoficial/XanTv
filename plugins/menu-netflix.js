@@ -44,7 +44,7 @@ const handler = async (m, { conn, usedPrefix, command }) => {
     contextInfo: {
       externalAdReply: {
         title: "🎥 XanTV - dv yer 🌌",
-        body: "Haz clic para unirte a nuestros grupos y aprovechar más ofertas",
+        body: "venta de cuentas de netflix",
         sourceUrl: "https://github.com/king123XZ/XanTv", // Puedes cambiar este enlace por tu repo si tienes uno
         mediaType: 1,
         renderLargerThumbnail: true
