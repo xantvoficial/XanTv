@@ -1,0 +1,52 @@
+let handler = async (m, { conn, usedPrefix }) => {
+  let creatorName = 'Bienvenido al bot disfrutalo✨️🎄'
+
+  // 🧾 Obtener información del usuario
+  let user = global.db.data.users[m.sender]
+  let name = await conn.getName(m.sender)
+  let number = m.sender.split('@')[0]
+
+  let info = `
+╭━━〔 𝗜𝗡𝗙𝗢 𝗗𝗘𝗟 𝗨𝗦𝗨𝗔𝗥𝗜𝗢 〕━━⬣
+┃ 👤 *Nombre:* ${name}
+┃ 🪪 *Número:* wa.me/${number}
+┃ 🧬 *Experiencia:* ${user.exp}
+┃ 💎 *Diamantes:* ${user.diamond || 0}
+┃ 🎟 *Tokens:* ${user.joincount || 0}
+┃ 🔋 *Nivel:* ${user.level}
+┃ 🧪 *Rango:* ${user.role}
+╰━━━━━━━━━━━━━━━━⬣`.trim()
+
+  // 🖼️ Imagen con mensaje
+  await conn.sendMessage(m.chat, {
+    image: { url: 'https://qu.ax/STCTA.jpg' }, // Cambia por otra si quieres
+    caption: info
+  }, { quoted: m })
+
+  // 📋 Lista interactiva de menús
+  let sections = [
+    {
+      title: "📋 Menús disponibles",
+      rows: [
+        { title: "📜 Ver Menú Principal", rowId: `${usedPrefix}help` },
+        { title: "🧩 Ser bot / Sub Bot", rowId: `${usedPrefix}code` },
+        { title: "👑 Creador", rowId: `${usedPrefix}owner` },
+        { title: "🎋 Grupos", rowId: `${usedPrefix}grupos` },
+        { title: "🔞 +18", rowId: `${usedPrefix}hotmenu` }
+      ]
+    }
+  ]
+
+  let listMessage = {
+    text: '📱 *Bienvenido al Panel del Bot*\n\nSelecciona una opción del menú:',
+    footer: 'Bot de Brayan 😼🍁',
+    title: ` ${creatorName}`,
+    buttonText: "✨ Ver Menús",
+    sections
+  }
+
+  await conn.sendMessage(m.chat, listMessage, { quoted: m })
+}
+
+handler.command = ['menu', 'abrirmenu', 'menú']
+export default handler
