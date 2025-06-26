@@ -44,8 +44,8 @@ const handler = async (m, { conn, usedPrefix, command }) => {
   }, { quoted: m })
 }
 
-handler.help = ['grupos']
+handler.help = ['LISTADECUENTASENVENTAS']
 handler.tags = ['info']
-handler.command = /^grupos$/i
+handler.command = /^LISTADECUENTASENVENTAS$/i
 
 export default handler
