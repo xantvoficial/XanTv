@@ -55,7 +55,7 @@ say('XanTv', {
 })
 
 
-say('Xant dv yer', {
+say('Ventas', {
   font: '3d', 
   align: 'center',
   colors: ['yellowBright', 'blueBright'], 
