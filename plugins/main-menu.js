@@ -157,16 +157,16 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     const buttons = [
       {
         buttonId: `${_p}owner`,
-        buttonText: { displayText: "PARA COMPRAR" },
+        buttonText: { displayText: "PARA COMPRAR TOQUE A QUI" },
         type: 1,
       },
       {
         buttonId: `${_p}code`,
-        buttonText: { displayText: "LISTA DE CUENTAS EN VENTA" },
+        buttonText: { displayText: "TODAVIA NO SE QUE" },
         type: 1,
       },      {
         buttonId: `${_p}grupos`,
-        buttonText: { displayText: "🌪 Mᴇɴᴜ Cᴀᴛᴇɢᴏʀɪá" },
+        buttonText: { displayText: "LISTA DE CUENTAS EN VENTA" },
         type: 1,
       },
     ];
