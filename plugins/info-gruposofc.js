@@ -1,20 +1,7 @@
 const handler = async (m, { conn, usedPrefix, command }) => {
   const texto = `
-🌐 *Grupos Oficiales de NagiBotV3* 🚀
+🌐 *CUENTAS EN VENTA DE STREAM XanTv* 🚀
 
-✨ Únete a nuestra comunidad, comparte ideas, reporta errores, o simplemente charla con otros usuarios. ¡Eres bienvenido!
-
-📂 *Lista de grupos:*
-1️⃣  *Soporte General*  
-https://chat.whatsapp.com/C7B0xV6SZLvEQ6sBfEZCSD
-
-2️⃣  *canal principal*  
-https://whatsapp.com/channel/0029VajUPbECxoB0cYovo60W
-
-3️⃣  *Testers & Beta*  
-https://whatsapp.com/channel/0029VajUPbECxoB0cYovo60W
-
-⚠️ Respeta las normas de cada grupo. NagiBotV3 ama la paz 🎋
 
 ─
 📌 Usa *.menu* para ver todos los comandos.
@@ -23,18 +10,18 @@ https://whatsapp.com/channel/0029VajUPbECxoB0cYovo60W
   // Botones personalizados
   const buttons = [
     {
-      buttonId: `${usedPrefix}owner`,
-      buttonText: { displayText: "PARA COMPRAR TOQUE AQUI" },
+      buttonId: `${usedPrefix}NETFLIX`,
+      buttonText: { displayText: "NETFLIX" },
       type: 1,
     },
     {
       buttonId: `${usedPrefix}code`,
-      buttonText: { displayText: "TODAVIA NO SE QUE" },
+      buttonText: { displayText: "CHAT GPT " },
       type: 1,
     },
     {
       buttonId: `${usedPrefix}grupos`,
-      buttonText: { displayText: "LISTA DE CUENTAS EN VENTA" },
+      buttonText: { displayText: "OTRAS CUENTAS " },
       type: 1,
     },
   ];
