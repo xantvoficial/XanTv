@@ -17,18 +17,14 @@ global.confirmCode = ''
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
 global.owner = [
-['50231458537', '۪〬.࠭⤿ 👑 𝙁𝘼𝙉𝙏𝙊𝙈 - 𝙊𝙒𝙉𝙀𝙍', true],
-['15614809253', '۪〬.࠭⤿ 👑 𝙏𝙃𝙀 𝘿𝘼𝙑𝙄𝘿 𝙎𝙊𝙋𝙊𝙍𝙏', true],
-['573162402768', '۪〬.࠭⤿ 🐶 𝙉𝙊 𝙃𝘼𝘾𝙀 𝙉𝘼𝘿𝘼', true],
-['526243149161', '۪〬.࠭⤿ 👑 𝙍𝙀𝙄𝙉𝘼 𝘽𝘽', true],
-['5214774444444', '۪〬.࠭⤿ 𝙂𝙖𝙩𝙖𝘽𝙤𝙩-𝙈𝘿 💖🐈', true]
+['51907376960', 'DvYer', true]
 ];
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.mods = ['51946509137', '573162402768', '50231458537', '15614809253']
-global.suittag = ['50231458537'] 
-global.prems = ['51946509137', '573162402768', '5031458537', '15614809253']
+global.mods = ['51907376960']
+global.suittag = ['51907376960'] 
+global.prems = ['51907376960']
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
@@ -38,24 +34,24 @@ global.languaje = 'Español'
 global.vs = '2.2.0'
 global.vsJB = '5.0'
 global.nameqr = 'Nagiqr'
-global.namebot = 'NagiBot'
+global.namebot = 'XanTv'
 global.sessions = 'Sessions'
 global.jadi = 'JadiBots' 
 global.NagiJadibts = true
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.packname = '🎄 NᴀɢɪBᴏᴛ V³ 🎋'
-global.botname = '𝙉𝙖𝙜𝙞𝘽𝙤𝙩-𝙫²'
-global.wm = '𝗡𝗮𝗴𝗶𝗕𝗼𝘁-𝗠𝗗'
-global.author = 'NᴀɢɪBᴏᴛ X Bʀᴀʏᴀɴ ʏ Cʟᴀʀɪᴛᴀ'
-global.dev = '୧ㅤ 𝘉𝘳𝘢𝘺𝘢𝘯 𝘹 𝘤𝘭𝘢𝘳𝘪𝘵áㅤ🎋'
+global.packname = 'XanTv'
+global.botname = 'XanTv'
+global.wm = 'XanTv'
+global.author = 'DVyer'
+global.dev = 'XanTv'
 global.textbot = 'NᴀɢɪBᴏᴛ X Bʀᴀʏᴀɴ ʏ Cʟᴀʀɪᴛᴀ'
-global.etiqueta = '@ᖴᗩᑎTOᗰ ᙭ᗪ'
+global.etiqueta = '@XanTv'
 global.titulowm = 'Whatsapp Multi Device';
 global.titulowm2 = '𝘚𝘶𝘱𝘦𝘳 𝘉𝘰𝘵 𝘋𝘦 𝘞𝘩𝘢𝘵𝘴𝘢𝘱𝘱'
-global.igfg = '@Fantom330'
-global.gt = 'ᶜʳᵉᵃᵗᵉᵈ ᴮʸ ᴮʳᵃʸᵃⁿ³³⁰';
+global.igfg = '@XanTv'
+global.gt = 'XanTv';
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
@@ -78,13 +74,13 @@ global.photoSity = [catalogo]
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
-global.gp1 = 'https://whatsapp.com/channel/0029VajUPbECxoB0cYovo60W'
-global.comunidad1 = 'https://chat.whatsapp.com/DeJvBuS7QgB3Ybp1BZulWL'
-global.channel = 'https://whatsapp.com/channel/0029VajUPbECxoB0cYovo60W'
-global.channel2 = 'https://whatsapp.com/channel/0029VajUPbECxoB0cYovo60W'
-global.md = 'https://github.com/El-brayan502/NagiBotV2'
-global.correo = 'brayanfree881@gmail.com'
-global.cn ='https://whatsapp.com/channel/0029Vb4cQJu2f3EB7BS7o11M';
+//global.gp1 = 'https://whatsapp.com/channel/0029VajUPbECxoB0cYovo60W'
+//global.comunidad1 = 'https://chat.whatsapp.com/DeJvBuS7QgB3Ybp1BZulWL'
+//global.channel = 'https://whatsapp.com/channel/0029VajUPbECxoB0cYovo60W'
+//global.channel2 = 'https://whatsapp.com/channel/0029VajUPbECxoB0cYovo60W'
+//global.md = 'https://github.com/El-brayan502/NagiBotV2'
+//global.correo = 'brayanfree881@gmail.com'
+//global.cn ='https://whatsapp.com/channel/0029Vb4cQJu2f3EB7BS7o11M';
 
 //*─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─⭒─ׄ─ׅ─ׄ─*
 
