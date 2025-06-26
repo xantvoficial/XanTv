@@ -18,15 +18,37 @@ https://whatsapp.com/channel/0029VajUPbECxoB0cYovo60W
 
 ─
 📌 Usa *.menu* para ver todos los comandos.
-`
+`.trim() + "\n\n🔹 Selecciona una opción:";
+
+  // Botones personalizados
+  const buttons = [
+    {
+      buttonId: `${usedPrefix}owner`,
+      buttonText: { displayText: "PARA COMPRAR TOQUE AQUI" },
+      type: 1,
+    },
+    {
+      buttonId: `${usedPrefix}code`,
+      buttonText: { displayText: "TODAVIA NO SE QUE" },
+      type: 1,
+    },
+    {
+      buttonId: `${usedPrefix}grupos`,
+      buttonText: { displayText: "LISTA DE CUENTAS EN VENTA" },
+      type: 1,
+    },
+  ];
 
   await conn.sendMessage(m.chat, {
-    text: texto.trim(),
+    text: texto,
+    footer: "NagiBotV3",
+    buttons: buttons,
+    headerType: 1,
     contextInfo: {
       externalAdReply: {
         title: "NagiBotV2 🌌",
         body: "Únete a nuestros grupos oficiales",
-        thumbnailUrl: 'https://qu.ax/hcjnp.jpg', // Puedes cambiar la imagen
+        thumbnailUrl: 'https://qu.ax/hcjnp.jpg',
         sourceUrl: "https://github.com/El-brayan502/NagiBotV2",
         mediaType: 1,
         renderLargerThumbnail: true
