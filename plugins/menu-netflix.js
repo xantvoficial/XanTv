@@ -1,37 +1,52 @@
 const handler = async (m, { conn, usedPrefix, command }) => {
   const texto = `
-🌐 *NETFLIX* 🚀
+🎬 *VENTA DE CUENTAS NETFLIX* 🔥
 
+🛒 *Precio por perfil:* 
+   ┗ 💰 S/ 18.00
 
-─
-📌 Usa *.menu* para ver todos los comandos.
-`.trim() + "\n\n🔹 Selecciona una opción:";
+📢 *¡Promo especial para seguidores de TikTok Live!*
+   ┗ 🔥 Solo a *S/ 15.00*
 
-  // Botones personalizados
+⏳ *Duración del servicio:* 
+   ┗ 📆 Garantía de *30 días*
+   ┗ 📉 Reposición si hay caída
+
+💳 *Métodos de pago disponibles:*
+   ┗ 📱 Yape
+   ┗ 📲 Plin
+   ┗ 🏦 Transferencias y más
+
+📌 Usa *.menu* para ver todos los comandos disponibles.
+
+🔹 Selecciona una opción:
+`.trim();
+
   const buttons = [
     {
       buttonId: `${usedPrefix}COMPRAR`,
-      buttonText: { displayText: "COMPRAR " },
+      buttonText: { displayText: "🛍️ Comprar ahora" },
       type: 1,
     },
     {
       buttonId: `${usedPrefix}LISTADECUENTASENVENTAS`,
-      buttonText: { displayText: "ATRAS " },
+      buttonText: { displayText: "🔙 Volver" },
       type: 1,
     },
   ];
 
   await conn.sendMessage(m.chat, {
-    text: texto,
-    footer: "XanTv",
+    image: { url: 'https://qu.ax/WSBNA.jpg' },
+    caption: texto,
+    footer: "🔐 XanTV - dv yer",
     buttons: buttons,
-    headerType: 1,
+    headerType: 4,
     contextInfo: {
       externalAdReply: {
-        title: "xan tv🌌",
-        body: "Únete a nuestros grupos oficiales",
+        title: "🎥 XanTV - dv yer 🌌",
+        body: "Haz clic para unirte a nuestros grupos y aprovechar más ofertas",
         thumbnailUrl: 'https://qu.ax/hcjnp.jpg',
-        sourceUrl: "https://github.com/El-brayan502/NagiBotV2",
+        sourceUrl: "https://github.com/El-brayan502/NagiBotV2", // Puedes cambiar este enlace por tu repo si tienes uno
         mediaType: 1,
         renderLargerThumbnail: true
       }
