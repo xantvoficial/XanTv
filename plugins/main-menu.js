@@ -171,7 +171,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
       },
     ];
 
-    let img = 'https://n.uguu.se/OysQmQMP.jpg';
+    let img = 'https://tinyurl.com/2yskq8k8';
     await m.react('✅');
 
     await conn.sendMessage(
