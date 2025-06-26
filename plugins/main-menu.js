@@ -21,23 +21,7 @@ let Styles = (text, style = 1) => {
 };
 
 let tags = {
-  'juegos': ' JUEGOS ',
   'main': ' INFO ',
-  'search': ' SEARCH ',
-  'anime': ' ANIME ',
-  'game': ' GAME ',
-  'serbot': ' SUB BOTS ',
-  'rpg': ' RPG ',
-  'rg': ' REGISTRO ',
-  'sticker': ' STICKER ',
-  'img': ' IMAGE ',
-  'group': ' GROUPS ',
-  'nable': ' ON / OFF ', 
-  'premium': ' PREMIUM ',
-  'downloader': ' DOWNLOAD ',
-  'tools': ' TOOLS ',
-  'fun': ' FUN ',
-  'nsfw': ' NSFW ', 
   'owner': ' OWNER ', 
 };
 
@@ -45,8 +29,6 @@ const defaultMenu = {
   before: `
 ╭─「 🧑‍💻 *I N F O - U S U A R I O* 」
 │ 👤  Nombre      : %name
-│ 🧪  Experiencia : %exp XP
-│ 🎯  Nivel       : %level
 ╰───────────────⬣
 
 ╭─「 🤖 *I N F O - B O T* 」
@@ -55,18 +37,17 @@ const defaultMenu = {
 │ 🌐  Estado      : Modo Público
 │ 📡  Motor       : Baileys MD
 │ ⏱️  Activo      : %muptime
-│ 👥  Usuarios    : %totalreg
 ╰───────────────⬣
 
 %readmore
 `.trimStart(),
 
   header: `
-╭━━━〔 📂 %category 〕━━━⬣`,
+〔 📂 %category 〕`,
 
-  body: `┃ ✦ %cmd`,
+//  body: `┃ ✦ %cmd`,
 
-  footer: `╰━━━━━━━━━━━━━━━━━━⬣`,
+ // footer: `╰━━━━━━━━━━━━━━━━━━⬣`,
 
   after: `\n🧠 _Desarrollado por_ dv yer para *XanTV* 🚀`
 };
@@ -176,12 +157,12 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
     const buttons = [
       {
         buttonId: `${_p}owner`,
-        buttonText: { displayText: "👑 Cʀᴇᴀᴅᴏʀ" },
+        buttonText: { displayText: "PARA COMPRAR" },
         type: 1,
       },
       {
         buttonId: `${_p}code`,
-        buttonText: { displayText: "🕹 SᴇʀBᴏᴛ" },
+        buttonText: { displayText: "LISTA DE CUENTAS EN VENTA" },
         type: 1,
       },      {
         buttonId: `${_p}grupos`,
