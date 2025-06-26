@@ -45,9 +45,9 @@ const defaultMenu = {
   header: `
 〔 📂 %category 〕`,
 
-//  body: `┃ ✦ %cmd`,
-
- // footer: `╰━━━━━━━━━━━━━━━━━━⬣`,
+body: `┃ ✦ %cmd`, 
+  
+  footer: `╰━━━━━━━━━━━━━━━━━━⬣`,
 
   after: `\n🧠 _Desarrollado por_ dv yer para *XanTV* 🚀`
 };
