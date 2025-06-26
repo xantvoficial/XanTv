@@ -11,7 +11,7 @@ const handler = async (m, { conn, usedPrefix, command }) => {
   const buttons = [
     {
       buttonId: `${usedPrefix}COMPRAR`,
-      buttonText: { displayText: "C " },
+      buttonText: { displayText: "COMPRAR " },
       type: 1,
     },
     {
@@ -23,12 +23,12 @@ const handler = async (m, { conn, usedPrefix, command }) => {
 
   await conn.sendMessage(m.chat, {
     text: texto,
-    footer: "NagiBotV3",
+    footer: "XanTv",
     buttons: buttons,
     headerType: 1,
     contextInfo: {
       externalAdReply: {
-        title: "NagiBotV2 🌌",
+        title: "xan tv🌌",
         body: "Únete a nuestros grupos oficiales",
         thumbnailUrl: 'https://qu.ax/hcjnp.jpg',
         sourceUrl: "https://github.com/El-brayan502/NagiBotV2",
