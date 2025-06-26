@@ -38,7 +38,7 @@ const handler = async (m, { conn, usedPrefix, command }) => {
   ];
 
   await conn.sendMessage(m.chat, {
-    image: { url: 'https://qu.ax/WSBNA.jpg' }, // Puedes cambiar la imagen por una relacionada con ChatGPT si deseas
+    image: { url: 'https://qu.ax/ReHKm.jpg' }, // Puedes cambiar la imagen por una relacionada con ChatGPT si deseas
     caption: texto,
     footer: "🔐 XanTV - dv yer",
     buttons: buttons,
