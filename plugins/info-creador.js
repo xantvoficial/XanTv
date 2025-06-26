@@ -1,7 +1,7 @@
 let handler = async (m, { conn, usedPrefix }) => {
-  let creatorNumber = '50231458537'
-  let creatorName = 'Bʀᴀʏᴀɴ xD😼🍁'
-  let channelLink = 'https://whatsapp.com/channel/0029VajUPbECxoB0cYovo60W'
+  let creatorNumber = '51907376960'
+  let creatorName = 'XanTv'
+  //let channelLink = 'https://whatsapp.com/channel/0029VajUPbECxoB0cYovo60W'
 
   let vcard = `
 BEGIN:VCARD
@@ -24,14 +24,14 @@ END:VCARD`.trim()
     {
       title: "Opciones del Creador",
       rows: [
-        { title: "📞 Contactar por WhatsApp", rowId: `https://wa.me/${creatorNumber}` },
-        { title: "📣 Ir al Canal Oficial", rowId: channelLink }
+        { title: "📞 Contactar por WhatsApp", rowId: `https://wa.me/${creatorNumber}` }
+        //{ title: "📣 Ir al Canal Oficial", rowId: channelLink }
       ]
     }
   ]
 
   let listMessage = {
-    text: '👑 *Creador del Bot*',
+    text: 'comprar cuenta*',
     footer: 'Selecciona una opción 👇',
     title: `${creatorName}`,
     buttonText: "📋 Ver opciones",
