@@ -1,5 +1,5 @@
 {
-"name": "NAGIBOT-MD X BRAYAN",
+"name": "XanTV",
 "version": "2.2.0",
 "description": "Super bot de WhatsApp 2.0",
 "main": "index.js",
@@ -18,16 +18,16 @@
 "eslint": "eslint .",
 "eslintfix": "eslint --fix ."
 },
-"homepage": "https://github.com/El-brayan502/NagiBotV2",
+"homepage": "https://github.com/king123XZ/XanTv",
 "author": {
-"name": "Brayan330"
+"name": "king123XZ"
 },
 "repository": {
 "type": "git",
-"url": "git+https://github.com/El-brayan502/NagiBotV2.git"
+"url": "git+https://github.com/king123XZ/XanTv.git"
 },
 "bugs": {
-"url": "https://github.com/El-brayan502/NagiBotV2/issues"
+"url": "https://github.com/king123XZ/XanTv.git/issues"
 },
 "license": "GPL-3.0-or-later",
 "dependencies": {
