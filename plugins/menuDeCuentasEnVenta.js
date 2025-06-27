@@ -34,7 +34,7 @@ const handler = async (m, { conn, usedPrefix, command }) => {
   ];
 
   await conn.sendMessage(m.chat, {
-    image: { url: 'https://qu.ax/GKVqa.jpg' },
+    image: { url: 'https://tinyurl.com/23ngc28f' },
     caption: texto,
     footer: "🔐 XanTv - creador dv yer",
     buttons: buttons,
