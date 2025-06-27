@@ -44,7 +44,7 @@ let handler = async (m, { conn, text }) => {
 handler.help = []
 handler.tags = []
 handler.register = true
-handler.command = / // Responde a cualquier mensaje
+handler.command = //*/  // Responde a cualquier mensaje
 handler.group = false // Funciona en cualquier chat, no solo grupos
 
 export default handler
