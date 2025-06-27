@@ -9,14 +9,14 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   let msg = await m.reply('🔄 Cargando... 10%');
 
   try {
-    // Simulación de carga en pasos
+    // Simulación de carga
     await new Promise(r => setTimeout(r, 1000));
     await conn.sendMessage(m.chat, { edit: msg.key, text: '🔄 Cargando... 50%' });
 
     await new Promise(r => setTimeout(r, 1000));
     await conn.sendMessage(m.chat, { edit: msg.key, text: '🔄 Cargando... 100%' });
 
-    // Llamada real a la API
+    // Petición a la API
     let res = await fetch(`https://api.nekorinn.my.id/downloader/spotifyplay?q=${encodeURIComponent(text)}`);
     if (!res.ok) throw `❌ Error al buscar la canción. Intenta nuevamente.`;
 
@@ -25,13 +25,15 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
       throw `❌ No se encontró una canción con ese nombre.`;
     }
 
+    // Enviar como audio tipo PTT (nota de voz)
     await conn.sendMessage(m.chat, {
       audio: { url: data.result.downloadUrl },
       mimetype: 'audio/mpeg',
+      ptt: true, // Esto hace que se envíe como nota de voz
       fileName: `${data.result.title || 'spotify'}.mp3`,
     }, { quoted: m });
 
-    await conn.sendMessage(m.chat, { edit: msg.key, text: '✅ ¡Listo! Canción enviada con éxito.' });
+    await conn.sendMessage(m.chat, { edit: msg.key, text: '✅ ¡Listo! Canción enviada como nota de voz.' });
     await m.react('✅');
   } catch (e) {
     console.error('[SPOTIFY ERROR]', e);
