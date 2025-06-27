@@ -35,10 +35,10 @@ await m.react(done)
 await m.react(error)
 await conn.reply(m.chat, '✘ ChatGpT no puede responder a esa pregunta.', m)}}}
 
-handler.help = ['ia', 'chatgpt']
+handler.help = ['ia']
 handler.tags = ['ai']
 handler.register = true
-handler.command = ['ia', 'chatgpt', 'luminai']
+handler.command = ['ia']
 //handler.group = true
 
 export default handler
