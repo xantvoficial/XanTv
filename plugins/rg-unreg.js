@@ -7,10 +7,10 @@ let handler = async function (m, { conn, args, usedPrefix}) {
   user.registered = false
   m.reply(`🚩 Registro eliminado.`)
 }
-handler.help = ['unreg'] 
-handler.tags = ['rg']
+//handler.help = ['unreg'] 
+//handler.tags = ['rg']
 
-handler.command = ['unreg'] 
-handler.register = true
+//handler.command = ['unreg'] 
+//handler.register = true
 
 export default handler
