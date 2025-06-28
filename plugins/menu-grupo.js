@@ -13,13 +13,7 @@ const handler = async (m, { conn, usedPrefix }) => {
 🔗 *Link:* https://chat.whatsapp.com/Fu828nubauZ4Kk4fE1IC1d
 `.trim();
 
-  const buttons = [
-    {
-      buttonId: `${usedPrefix}https://chat.whatsapp.com/Fu828nubauZ4Kk4fE1IC1d`,
-      buttonText: { displayText: "💎 Unirme al Grupo" },
-      type: 1,
-    },
-  ];
+
 
   await conn.sendMessage(m.chat, {
     image: { url: 'https://qu.ax/GKVqa.jpg' },
