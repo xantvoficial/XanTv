@@ -191,9 +191,9 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname }) => {
   }
 };
 
-handler.help = ['menu'];
-handler.tags = ['main'];
-handler.command = ['menu'];
+//handler.help = ['menu'];
+//handler.tags = ['main'];
+//handler.command = ['menu'];
 //handler.register = true;
 export default handler;
 
