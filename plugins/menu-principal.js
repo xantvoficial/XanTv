@@ -1,4 +1,4 @@
-const handler = async (m, { conn, usedPrefix, command }) => {
+  const handler = async (m, { conn, usedPrefix, command }) => {
   const texto = `
 🌐 *CUENTAS EN VENTA DE STREAM - XanTv* 🚀
 
@@ -17,8 +17,8 @@ const handler = async (m, { conn, usedPrefix, command }) => {
 
   const buttons = [
     {
-      buttonId: `${usedPrefix}NETFLIX`,
-      buttonText: { displayText: "📺 NETFLIX" },
+      buttonId: `${usedPrefix}PROMOCIONES`,
+      buttonText: { displayText: "PROMOCIONES" },
       type: 1,
     },
     {
