@@ -6,11 +6,10 @@ const handler = async (m, { conn }) => {
 🎁 Sorteos
 🎉 Regalos
 💸 Descuentos
-📺 Los días que hago *LIVE* en TikTok para todos mis clientes.
+📺 L*LIVE* en TikTok.
 
 💎 *¡Únete para ser Cliente VIP!* 💎
 
-🔗 *Enlace del grupo:*
 https://chat.whatsapp.com/Fu828nubauZ4Kk4fE1IC1d
 `.trim();
 
