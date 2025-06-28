@@ -107,8 +107,8 @@ let chtxt = `👤 *𝙪𝙨𝙪𝙖𝙧𝙞𝙤* » ${m.pushName || 'Anónimo'}
     }, { quoted: null });
 };
 
-handler.help = ['reg']
-handler.tags = ['rg']
-handler.command = ['verify', 'verificar', 'reg', 'register', 'registrar']
+//handler.help = ['reg']
+//handler.tags = ['rg']
+//handler.command = ['verify', 'verificar', 'reg', 'register', 'registrar']
 
 export default handler
