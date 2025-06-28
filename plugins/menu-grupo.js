@@ -1,4 +1,4 @@
-const handler = async (m, { conn, usedPrefix }) => {
+const handler = async (m, { conn }) => {
   const texto = `
 🤵🏻‍♂️ *Cliente VIP*
 
@@ -6,28 +6,18 @@ const handler = async (m, { conn, usedPrefix }) => {
 🎁 Sorteos
 🎉 Regalos
 💸 Descuentos
-📺 Los días que hago *LIVE* en TikTok para todos mis clientes.
+📺 *LIVE* en TikTok 
 
 💎 *¡Únete para ser Cliente VIP!* 💎
 
-🔗 *Link:* https://chat.whatsapp.com/Fu828nubauZ4Kk4fE1IC1d
+🔗 *Enlace del grupo:*
+https://chat.whatsapp.com/Fu828nubauZ4Kk4fE1IC1d
 `.trim();
-
-
 
   await conn.sendMessage(m.chat, {
     image: { url: 'https://qu.ax/GKVqa.jpg' },
     caption: texto,
-    footer: "🔐 XanTv - creador dv yer",
-    buttons: buttons,
-    headerType: 4
-  }, { quoted: m });
-}
-
-// Subcomando que envía el enlace de nuevo
-const enlacegrupo = async (m, { conn }) => {
-  await conn.sendMessage(m.chat, {
-    text: "🔗 *Aquí tienes el enlace para unirte:*\nhttps://chat.whatsapp.com/Fu828nubauZ4Kk4fE1IC1d"
+    footer: "🔐 XanTv - creador dv yer"
   }, { quoted: m });
 };
 
@@ -35,9 +25,4 @@ handler.help = ['GRUPOOFICIAL'];
 handler.tags = ['info'];
 handler.command = /^GRUPOOFICIAL$/i;
 
-enlacegrupo.help = ['enlacegrupo'];
-enlacegrupo.tags = ['info'];
-enlacegrupo.command = /^enlacegrupo$/i;
-
 export default handler;
-export { enlacegrupo };
