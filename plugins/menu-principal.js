@@ -34,7 +34,7 @@
   ];
 
   await conn.sendMessage(m.chat, {
-    image: { url: 'https://qu.ax/GKVqa.jpg' },
+    image: { url: 'https://qu.ax/mOkkb.jpg' },
     caption: texto,
     footer: "🔐 XanTv - creador dv yer",
     buttons: buttons,
