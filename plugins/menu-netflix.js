@@ -53,8 +53,8 @@ const handler = async (m, { conn, usedPrefix, command }) => {
   }, { quoted: m })
 }
 
-handler.help = ['NETFLIX']
-handler.tags = ['CUENTAS']
-handler.command = /^NETFLIX$/i
+//handler.help = ['PROMOCIONES']
+//handler.tags = ['CUENTAS']
+handler.command = /^PROMOCIONES$/i
 
 export default handler
