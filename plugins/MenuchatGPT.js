@@ -1,53 +1,49 @@
 const handler = async (m, { conn, usedPrefix, command }) => {
   const texto = `
-🤖 *VENTA DE CUENTAS CHATGPT PLUS* ⚡
+🌐 *CUENTAS EN VENTA DE STREAM - XanTv* 🚀
 
-🛒 *Precio por cuenta:* 
-   ┗ 💰 S/ 18.00
+🎬 *Servicios disponibles:*
+   ┗ 📺 Netflix desde S/ 15.00
+   ┗ 🤖 ChatGPT Plus desde S/ 15.00
+   ┗ 🎶 Spotify, Disney+, HBO Max, y más...
 
-📢 *¡Promo especial para seguidores de TikTok Live!*
-   ┗ 🔥 Solo a *S/ 15.00*
+🎯 *Garantía de 30 días en todas las cuentas.*
+💳 *Pagos por Yape, Plin, y transferencias.*
 
-✨ *Ventajas de ChatGPT Plus:*
-   ┗ 🚀 Acceso a GPT-4
-   ┗ ⚡ Respuestas más rápidas
-   ┗ ⏳ Prioridad en horarios pico
-   ┗ 🧠 Ideal para tareas, código, estudios y más
-
-💳 *Métodos de pago disponibles:*
-   ┗ 📱 Yape
-   ┗ 📲 Plin
-   ┗ 🏦 Transferencias y más
-
-📌 Usa *.menu* para ver todos los comandos disponibles.
+📌 Usa *.menu* para ver todos los comandos y ayuda general.
 
 🔹 Selecciona una opción:
 `.trim();
 
   const buttons = [
     {
-      buttonId: `${usedPrefix}COMPRAR`,
-      buttonText: { displayText: "💳 Comprar ChatGPT Plus" },
+      buttonId: `${usedPrefix}NETFLIX`,
+      buttonText: { displayText: "📺 NETFLIX" },
       type: 1,
     },
     {
-      buttonId: `${usedPrefix}LISTADECUENTASENVENTAS`,
-      buttonText: { displayText: "🔙 Volver" },
+      buttonId: `${usedPrefix}code`,
+      buttonText: { displayText: "🤖 CHATGPT" },
+      type: 1,
+    },
+    {
+      buttonId: `${usedPrefix}grupos`,
+      buttonText: { displayText: "📦 OTRAS CUENTAS" },
       type: 1,
     },
   ];
 
   await conn.sendMessage(m.chat, {
-    image: { url: 'https://qu.ax/ReHKm.jpg' }, // Puedes cambiar la imagen por una relacionada con ChatGPT si deseas
+    image: { url: 'https://qu.ax/GKVqa.jpg' },
     caption: texto,
-    footer: "🔐 XanTV - dv yer",
+    footer: "🔐 XanTv - creador dv yer",
     buttons: buttons,
     headerType: 4,
     contextInfo: {
       externalAdReply: {
-        title: "🤖 XanTV - dv yer 🌌",
-        body: "Venta oficial de cuentas ChatGPT Plus",
-        sourceUrl: "https://github.com/king123XZ/XanTv", // Tu enlace personalizado
+        title: "XanTv 🌌",
+        body: "Calidad, confianza y buen precio. Creador: dv yer",
+        thumbnailUrl: 'https://qu.ax/GKVqa.jpg',
         mediaType: 1,
         renderLargerThumbnail: true
       }
@@ -55,9 +51,8 @@ const handler = async (m, { conn, usedPrefix, command }) => {
   }, { quoted: m })
 }
 
-handler.help = ['CHATGPT']
-handler.tags = ['CUENTAS']
-handler.command = /^CHATGPT$/i
+handler.help = ['LISTADECUENTASENVENTAS', 'MENU']
+handler.tags = ['info']
+handler.command = /^(LISTADECUENTASENVENTAS|MENU)$/i
 
 export default handler
-
