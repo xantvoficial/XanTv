@@ -15,7 +15,7 @@ const handler = async (m, { conn, usedPrefix }) => {
 
   const buttons = [
     {
-      buttonId: `${usedPrefix}enlacegrupo`,
+      buttonId: `${usedPrefix}https://chat.whatsapp.com/Fu828nubauZ4Kk4fE1IC1d`,
       buttonText: { displayText: "💎 Unirme al Grupo" },
       type: 1,
     },
