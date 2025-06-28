@@ -13,18 +13,19 @@ const handler = async (m, { conn, usedPrefix, command }) => {
 
   const buttons = [
     {
-      buttonId: `${usedPrefix}GRUPOOFICIALLINK`,
-      buttonText: { displayText: "💎 Unirme al Grupo" },
-      type: 1,
-    },
+      index: 1,
+      urlButton: {
+        displayText: "💎 Unirme al Grupo",
+        url: "https://chat.whatsapp.com/Fu828nubauZ4Kk4fE1IC1d"
+      }
+    }
   ];
 
   await conn.sendMessage(m.chat, {
-    image: { url: 'https://qu.ax/GKVqa.jpg' }, // Imagen del grupo, cámbiala si quieres otra
+    image: { url: 'https://qu.ax/GKVqa.jpg' }, // Imagen del grupo de WhatsApp
     caption: texto,
     footer: "🔐 XanTv - creador dv yer",
-    buttons: buttons,
-    headerType: 4,
+    templateButtons: buttons,
     contextInfo: {
       externalAdReply: {
         title: "🎉 Grupo Oficial XanTv",
@@ -38,18 +39,8 @@ const handler = async (m, { conn, usedPrefix, command }) => {
   }, { quoted: m })
 }
 
-// Subcomando para abrir enlace directo cuando toquen el botón
-const linkHandler = async (m, { conn }) => {
-  await conn.sendMessage(m.chat, { text: "🔗 Únete aquí:\nhttps://chat.whatsapp.com/Fu828nubauZ4Kk4fE1IC1d" }, { quoted: m });
-}
-
 handler.help = ['GRUPOOFICIAL']
 handler.tags = ['info']
 handler.command = /^GRUPOOFICIAL$/i
 
-linkHandler.help = ['GRUPOOFICIALLINK']
-linkHandler.tags = ['info']
-linkHandler.command = /^GRUPOOFICIALLINK$/i
-
 export default handler
-export { linkHandler }
