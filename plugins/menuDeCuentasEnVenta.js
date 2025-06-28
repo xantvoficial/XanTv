@@ -22,7 +22,7 @@ const handler = async (m, { conn, usedPrefix, command }) => {
       type: 1,
     },
     {
-      buttonId: `${usedPrefix}CHATGPT`,
+      buttonId: `${usedPrefix}code`,
       buttonText: { displayText: "🤖 CHATGPT" },
       type: 1,
     },
@@ -34,7 +34,7 @@ const handler = async (m, { conn, usedPrefix, command }) => {
   ];
 
   await conn.sendMessage(m.chat, {
-    image: { url: 'https://tinyurl.com/23ngc28f' },
+    image: { url: 'https://qu.ax/GKVqa.jpg' },
     caption: texto,
     footer: "🔐 XanTv - creador dv yer",
     buttons: buttons,
@@ -51,9 +51,8 @@ const handler = async (m, { conn, usedPrefix, command }) => {
   }, { quoted: m })
 }
 
-handler.help = ['LISTADECUENTASENVENTAS']
+handler.help = ['LISTADECUENTASENVENTAS', 'MENU']
 handler.tags = ['info']
-handler.command = /^LISTADECUENTASENVENTAS$/i
+handler.command = /^(LISTADECUENTASENVENTAS|MENU)$/i
 
 export default handler
-
