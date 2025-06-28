@@ -1,6 +1,6 @@
   const handler = async (m, { conn, usedPrefix, command }) => {
   const texto = `
-🌐 *CUENTAS EN VENTA DE STREAM - XanTv* 🚀
+🌐 *CUENTAS DIGITALES EN VEMTA- XanTv* 🚀
 
 🎬 *Servicios disponibles:*
    ┗ 📺 Netflix desde S/ 15.00
