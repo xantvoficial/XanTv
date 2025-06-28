@@ -1,29 +1,23 @@
 const handler = async (m, { conn }) => {
+  // Opcionalmente puedes personalizar este texto
   const texto = `
 🤵🏻‍♂️ *Cliente VIP*
 
-¡Holaa! 👋🏼 Te comento que cuento con un *grupo oficial* donde informo sobre:
-🎁 Sorteos
-🎉 Regalos
-💸 Descuentos
-📺 *LIVE* en TikTok 
-
-💎 *¡Únete para ser Cliente VIP!* 💎
+¡Holaa! 👋🏼 Únete al grupo oficial para sorteos, descuentos, y más.
 `.trim();
 
   await conn.sendMessage(m.chat, {
-    image: { url: 'https://qu.ax/GKVqa.jpg' },
-    caption: texto,
+    text: texto,
     footer: "🔐 XanTv - creador dv yer",
-    buttons: [
+    templateButtons: [
       {
-        buttonId: 'enlace_grupo',
-        buttonText: { displayText: '🔗 Unirme al grupo VIP' },
-        type: 1,
-        url: 'https://chat.whatsapp.com/Fu828nubauZ4Kk4fE1IC1d' // Esto NO funciona en todos los frameworks, ver nota abajo
+        index: 1,
+        urlButton: {
+          displayText: '🔗 UNIRME AL GRUPO VIP',
+          url: 'https://chat.whatsapp.com/Fu828nubauZ4Kk4fE1IC1d'
+        }
       }
-    ],
-    headerType: 4
+    ]
   }, { quoted: m });
 };
 
