@@ -23,7 +23,7 @@
     },
     {
       buttonId: `${usedPrefix}code`,
-      buttonText: { displayText: "🤖 CHATGPT" },
+      buttonText: { displayText: "GRUPO OFICAL" },
       type: 1,
     },
     {
