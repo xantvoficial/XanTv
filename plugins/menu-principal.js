@@ -22,7 +22,7 @@
       type: 1,
     },
     {
-      buttonId: `${usedPrefix}code`,
+      buttonId: `${usedPrefix}.grupooficial`,
       buttonText: { displayText: "GRUPO OFICAL" },
       type: 1,
     },
