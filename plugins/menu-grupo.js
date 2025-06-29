@@ -14,7 +14,7 @@ https://chat.whatsapp.com/Fu828nubauZ4Kk4fE1IC1d
 `.trim();
 
   await conn.sendMessage(m.chat, {
-    image: { url: 'https://qu.ax/GKVqa.jpg' },
+    image: { url: 'https://tinyurl.com/23ts7lz5' },
     caption: texto,
     footer: "🔐 XanTv - creador dv yer"
   }, { quoted: m });
