@@ -1,13 +1,20 @@
   const handler = async (m, { conn, usedPrefix, command }) => {
   const texto = `
-🌐 *CUENTAS DIGITALES EN VENTA- XanTv* 🚀
+*📽️CUENTAS STREAMING📽️*
 
 🎬 *Servicios disponibles:*
    ┗ 📺 Netflix desde S/ 15.00
-   ┗ 🤖 ChatGPT Plus desde S/ 15.00
-   ┗ 🎶 Spotify, Disney+, HBO Max, y más...
+   ┗ 🤖 Disney desde S/ 7.00
+   ┗ 🎞️ HBO, Movistar, DirecTv, vix, Crunchyroll y más…
 
-📌 Usa *.menu* para ver todos los comandos y ayuda general.
+⏳ *Duración del servicio:* 
+   ┗ 📆 Garantía de *30 días*
+   ┗ 📉 Reposición si hay caída
+
+💳 *Métodos de pago disponibles:*
+   ┗ 📱 Yape
+   ┗ 💰 Plin
+   ┗ 🏦 Transferencias
 
 🔹 Selecciona una opción:
 `.trim();
