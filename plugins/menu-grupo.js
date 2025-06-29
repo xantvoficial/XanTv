@@ -8,7 +8,7 @@ const handler = async (m, { conn }) => {
 💸 Descuentos.
 📺 *LIVE* en TikTok.
 
-💎 *¡Únete y seras  Cliente VIP!* 💎.
+*💎¡Únete y sé Cliente VIP!💎*
 
 https://chat.whatsapp.com/Fu828nubauZ4Kk4fE1IC1d
 `.trim();
