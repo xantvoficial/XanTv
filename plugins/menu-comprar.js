@@ -1,5 +1,5 @@
 let handler = async (m, { conn, usedPrefix }) => {
-  let creatorNumber = '51907376960'
+  let creatorNumber = '51934920256'
   let creatorName = 'XanTv'
 
   // Crear vCard del vendedor
