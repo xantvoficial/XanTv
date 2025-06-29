@@ -1,6 +1,6 @@
 const handler = async (m, { conn, usedPrefix }) => {
   const texto = `
-📢 *Promoción activa*
+📢 *Promoción activas*
 
 Revisa nuestras cuentas disponibles 👇
 `.trim();
