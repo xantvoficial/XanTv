@@ -6,7 +6,7 @@ const handler = async (m, { conn }) => {
 🎁 Sorteos
 🎉 Regalos
 💸 Descuentos
-📺 L*LIVE* en TikTok.
+📺 *LIVE* en TikTok.
 
 💎 *¡Únete para ser Cliente VIP!* 💎
 
