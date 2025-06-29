@@ -42,5 +42,5 @@ END:VCARD`.trim()
   await conn.sendMessage(m.chat, listMessage, { quoted: m })
 }
 
-handler.command = ['owner', 'creador', 'dueño']
+handler.command = ['COMPRAR']
 export default handler
