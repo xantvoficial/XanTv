@@ -1,8 +1,8 @@
 let handler = async (m, { conn, usedPrefix }) => {
   let creatorNumber = '51907376960'
   let creatorName = 'XanTv'
-  //let channelLink = 'https://whatsapp.com/channel/0029VajUPbECxoB0cYovo60W'
 
+  // Crear vCard del vendedor
   let vcard = `
 BEGIN:VCARD
 VERSION:3.0
@@ -11,7 +11,7 @@ FN:${creatorName}
 TEL;type=CELL;type=VOICE;waid=${creatorNumber}:${creatorNumber}
 END:VCARD`.trim()
 
-  // Enviar el contacto del creador
+  // Enviar contacto del vendedor
   await conn.sendMessage(m.chat, {
     contacts: {
       displayName: creatorName,
@@ -19,28 +19,33 @@ END:VCARD`.trim()
     }
   }, { quoted: m })
 
-  // Crear lista con botón hacia canal y contacto
+  // Mensaje de anuncio
   let sections = [
     {
-      title: "Opciones del Creador",
+      title: "💎 Compra tu cuenta de streaming",
       rows: [
-        { title: "📞 Contactar por WhatsApp", rowId: `https://wa.me/${creatorNumber}` }
-        //{ title: "📣 Ir al Canal Oficial", rowId: channelLink }
+        { title: "📞 Contactar por WhatsApp", rowId: `https://wa.me/${creatorNumber}` },
+        { title: "💬 Ver número del vendedor", rowId: `${usedPrefix}owner` }
       ]
     }
   ]
 
   let listMessage = {
-    text: 'comprar cuenta*',
+    text: `🎬 *¡Obtén tu cuenta de streaming ahora!*
+
+🔥 Netflix, Disney+, Spotify y más.
+💰 Precios accesibles y servicio garantizado.
+📆 Duración: 30 días mínimo.
+📞 Contacta al vendedor para más detalles.`,
     footer: 'Selecciona una opción 👇',
-    title: `${creatorName}`,
+    title: `${creatorName} - Venta de cuentas`,
     buttonText: "📋 Ver opciones",
     sections
   }
 
-  // Enviar el mensaje con lista de opciones
+  // Enviar mensaje lista
   await conn.sendMessage(m.chat, listMessage, { quoted: m })
 }
 
-handler.command = ['COMPRAR']
+handler.command = ['owner', 'creador', 'dueño', 'comprarcuenta']
 export default handler
