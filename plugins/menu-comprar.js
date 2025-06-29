@@ -1,7 +1,7 @@
 let handler = async (m, { conn, usedPrefix }) => {
   let creatorName = 'XanTv'
   let numbers = [
-    { number: '51907376960', label: 'Vendedor 1' },
+    //{ number: '51907376960', label: 'Vendedor 1' },
     { number: '51934920256', label: 'Vendedor 2' }
   ]
 
