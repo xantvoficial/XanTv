@@ -7,9 +7,6 @@
    ┗ 🤖 ChatGPT Plus desde S/ 15.00
    ┗ 🎶 Spotify, Disney+, HBO Max, y más...
 
-🎯 *Garantía de 30 días en todas las cuentas.*
-💳 *Pagos por Yape, Plin, y transferencias.*
-
 📌 Usa *.menu* para ver todos los comandos y ayuda general.
 
 🔹 Selecciona una opción:
