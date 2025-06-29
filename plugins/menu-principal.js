@@ -24,7 +24,7 @@
       type: 1,
     },
     {
-      buttonId: `${usedPrefix}grupos`,
+      buttonId: `${usedPrefix}otrascuentas`,
       buttonText: { displayText: "📦 OTRAS CUENTAS" },
       type: 1,
     },
