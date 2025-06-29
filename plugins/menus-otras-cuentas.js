@@ -33,7 +33,7 @@ const handler = async (m, { conn, usedPrefix, command }) => {
         title: "🎥 XanTV - dv yer 🌌",
         body: "Venta de cuentas premium",
         sourceUrl: "https://github.com/king123XZ/XanTv", // Cambia por tu enlace si quieres
-        thumbnail: { url: 'https://qu.ax/JULOR.jpg' },
+        //thumbnail: { url: 'https://qu.ax/JULOR.jpg' },
         mediaType: 1,
         renderLargerThumbnail: true
       }
