@@ -23,7 +23,7 @@ const handler = async (m, { conn, usedPrefix, command }) => {
   ];
 
   await conn.sendMessage(m.chat, {
-    image: { url: 'https://qu.ax/JULOR.jpg' },
+    image: { url: 'https://tinyurl.com/296obofm' },
     caption: texto,
     footer: "🔐 XanTV - dv yer",
     buttons: buttons,
