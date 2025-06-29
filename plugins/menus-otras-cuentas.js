@@ -1,6 +1,5 @@
 const handler = async (m, { conn, usedPrefix, command }) => {
   const texto = `
-🎬 *VENTA DE CUENTAS* 🔥
 
 🎥 *PERFILES DISPONIBLES* 🎥
 ⠀⠀📌 _Netflix_ 
