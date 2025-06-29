@@ -8,7 +8,7 @@ const handler = async (m, { conn, usedPrefix, command }) => {
 
   const buttons = [
     {
-      buttonId: `${usedPrefix}COMPRAR`,
+      buttonId: `${usedPrefix}creador`,
       buttonText: { displayText: "🛍️ Comprar ahora" },
       type: 1,
     },
