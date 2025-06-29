@@ -39,6 +39,6 @@ const handler = async (m, { conn, usedPrefix, command }) => {
 
 //handler.help = ['PROMOCIONES']
 //handler.tags = ['CUENTAS']
-handler.command = /^PROMOCIONES$/i
+handler.command = /^otrascuentas$/i
 
 export default handler
