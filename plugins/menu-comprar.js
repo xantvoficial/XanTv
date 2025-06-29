@@ -1,32 +1,39 @@
 let handler = async (m, { conn, usedPrefix }) => {
-  let creatorNumber = '51934920256'
   let creatorName = 'XanTv'
+  let numbers = [
+    { number: '51907376960', label: 'Vendedor 1' },
+    { number: '51934920256', label: 'Vendedor 2' }
+  ]
 
-  // Crear vCard del vendedor
-  let vcard = `
+  // Crear múltiples vCards
+  let vCards = numbers.map(num => `
 BEGIN:VCARD
 VERSION:3.0
 N:;${creatorName};;;
-FN:${creatorName}
-TEL;type=CELL;type=VOICE;waid=${creatorNumber}:${creatorNumber}
-END:VCARD`.trim()
+FN:${creatorName} - ${num.label}
+TEL;type=CELL;type=VOICE;waid=${num.number}:${num.number}
+END:VCARD`.trim())
 
-  // Enviar contacto del vendedor
-  await conn.sendMessage(m.chat, {
-    contacts: {
-      displayName: creatorName,
-      contacts: [{ vcard }]
-    }
-  }, { quoted: m })
+  let contacts = {
+    displayName: creatorName,
+    contacts: vCards.map(vcard => ({ vcard }))
+  }
 
-  // Mensaje de anuncio
+  // Enviar contactos
+  await conn.sendMessage(m.chat, { contacts }, { quoted: m })
+
+  // Crear opciones con ambos contactos
+  let rows = numbers.map(num => ({
+    title: `📞 Contactar ${num.label}`,
+    rowId: `https://wa.me/${num.number}`
+  }))
+
   let sections = [
     {
       title: "💎 Compra tu cuenta de streaming",
-      rows: [
-        { title: "📞 Contactar por WhatsApp", rowId: `https://wa.me/${creatorNumber}` },
-        { title: "💬 Ver número del vendedor", rowId: `${usedPrefix}owner` }
-      ]
+      rows: rows.concat([
+        { title: "💬 Ver números de contacto", rowId: `${usedPrefix}owner` }
+      ])
     }
   ]
 
@@ -36,16 +43,16 @@ END:VCARD`.trim()
 🔥 Netflix, Disney+, Spotify y más.
 💰 Precios accesibles y servicio garantizado.
 📆 Duración: 30 días mínimo.
-📞 Contacta al vendedor para más detalles.`,
+📞 Contacta a un vendedor para más detalles.`,
     footer: 'Selecciona una opción 👇',
     title: `${creatorName} - Venta de cuentas`,
     buttonText: "📋 Ver opciones",
     sections
   }
 
-  // Enviar mensaje lista
   await conn.sendMessage(m.chat, listMessage, { quoted: m })
 }
 
 handler.command = ['owner', 'creador', 'dueño', 'comprarcuenta']
 export default handler
+
