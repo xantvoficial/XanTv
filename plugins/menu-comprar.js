@@ -1,61 +1,16 @@
-let handler = async (m, { conn, usedPrefix }) => {
-  let creatorName = 'XanTv'
-  let numbers = [
-    //{ number: '51907376960', label: 'Vendedor 1' },
-    { number: '51934920256', label: 'Vendedor 2' }
-  ]
-
-  // Crear múltiples vCards
-  let vCards = numbers.map(num => `
-BEGIN:VCARD
-VERSION:3.0
-N:;${creatorName};;;
-FN:${creatorName} - ${num.label}
-TEL;type=CELL;type=VOICE;waid=${num.number}:${num.number}
-END:VCARD`.trim())
-
-  let contacts = {
-    displayName: creatorName,
-    contacts: vCards.map(vcard => ({ vcard }))
-  }
-
-  // Enviar contactos
-  await conn.sendMessage(m.chat, { contacts }, { quoted: m })
-
-  // Crear opciones con ambos contactos
-  let rows = numbers.map(num => ({
-    title: `📞 Contactar ${num.label}`,
-    rowId: `https://wa.me/${num.number}`
-  }))
-
-  let sections = [
-    {
-      title: "💎 Compra tu cuenta de streaming",
-      rows: rows.concat([
-        { title: "💬 Ver números de contacto", rowId: `${usedPrefix}owner` }
-      ])
-    }
-  ]
-
-  // Crear mensaje con lista + imagen
-  let listMessage = {
-    image: { url: 'https://qu.ax/JULOR.jpg' },
-    caption: `🎬 *¡Obtén tu cuenta de streaming ahora!*
+let handler = async (m, { conn }) => {
+  await conn.sendMessage(m.chat, {
+    image: { url: 'https://tinyurl.com/26hgmdfm' },
+    caption: `🎬 *VENTA DE CUENTAS* 🔥
 
 🔥 Netflix, Disney+, Spotify y más.
 💰 Precios accesibles y servicio garantizado.
-📆 Duración: 30 días mínimo.
-📞 Contacta a un vendedor para más detalles.
+📆 Duración mínima de 30 días.
 
-Selecciona una opción 👇`,
-    footer: '',
-    title: `${creatorName} - Venta de cuentas`,
-    buttonText: "📋 Ver opciones",
-    sections
-  }
-
-  await conn.sendMessage(m.chat, listMessage, { quoted: m })
+📞 Contáctanos para más detalles.`,
+  }, { quoted: m })
 }
 
 handler.command = ['owner', 'creador', 'dueño', 'comprarcuenta']
 export default handler
+
