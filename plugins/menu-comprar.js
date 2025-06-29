@@ -37,14 +37,18 @@ END:VCARD`.trim())
     }
   ]
 
+  // Crear mensaje con lista + imagen
   let listMessage = {
-    text: `🎬 *¡Obtén tu cuenta de streaming ahora!*
+    image: { url: 'https://qu.ax/JULOR.jpg' },
+    caption: `🎬 *¡Obtén tu cuenta de streaming ahora!*
 
 🔥 Netflix, Disney+, Spotify y más.
 💰 Precios accesibles y servicio garantizado.
 📆 Duración: 30 días mínimo.
-📞 Contacta a un vendedor para más detalles.`,
-    footer: 'Selecciona una opción 👇',
+📞 Contacta a un vendedor para más detalles.
+
+Selecciona una opción 👇`,
+    footer: '',
     title: `${creatorName} - Venta de cuentas`,
     buttonText: "📋 Ver opciones",
     sections
@@ -55,4 +59,3 @@ END:VCARD`.trim())
 
 handler.command = ['owner', 'creador', 'dueño', 'comprarcuenta']
 export default handler
-
