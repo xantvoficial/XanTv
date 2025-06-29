@@ -3,12 +3,12 @@ const handler = async (m, { conn }) => {
 🤵🏻‍♂️ *Cliente VIP*
 
 ¡Holaa! 👋🏼 Te comento que cuento con un *grupo oficial* donde informo sobre:
-🎁 Sorteos
-🎉 Regalos
-💸 Descuentos
+🎁 Sorteos.
+🎉 Regalos.
+💸 Descuentos.
 📺 *LIVE* en TikTok.
 
-💎 *¡Únete para ser Cliente VIP!* 💎
+💎 *¡Únete y seras  Cliente VIP!* 💎.
 
 https://chat.whatsapp.com/Fu828nubauZ4Kk4fE1IC1d
 `.trim();
