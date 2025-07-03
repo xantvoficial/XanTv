@@ -82,7 +82,8 @@
 "socket.io": "^4.5.2",
 "syntax-error": "^1.4.0",
 "terminal-image": "^2.0.0",
-"url-regex-safe": "^3.0.0",
+"url-regex-safe": "^3.0.0", 
+"cfonts": "^3.3.0"
 "uuid": "^10.0.0",
 "translate-google-api": "^1.0.4",
 "google-it": "^1.6.4",
