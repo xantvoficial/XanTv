@@ -41,27 +41,18 @@ const PORT = process.env.PORT || process.env.SERVER_PORT || 3000
 //let require = createRequire(megu)
 let { say } = cfonts
 
-console.log(chalk.bold.redBright(`\n⇏CARGANDO XanTv dame un momento ⇍\n`))
+console.log(chalk.bold.redBright(`\n⇏𝗦𝗘 𝗘𝗦𝗧𝗔 𝗜𝗡𝗜𝗖𝗜𝗔𝗡𝗗𝗢 𝗠𝗔𝗚𝗜𝗕𝗢𝗧 𝗘𝗦𝗣𝗘𝗥𝗘 ⇍\n`))
 
-say('XanTv', {
-  font: 'chrome',
-  align: 'center',
-  colors: ['cyan', 'magenta'], 
-  background: 'black',
-  letterSpacing: 2,
-  lineHeight: 1,
-  space: true,
-  maxLength: '0'
+say('NAGIBOT', {
+font: 'block',
+align: 'center',
+colors: ['magentaBright']
 })
 
-
-say('Ventas', {
-  font: '3d', 
-  align: 'center',
-  colors: ['yellowBright', 'blueBright'], 
-  background: 'black',
-  letterSpacing: 1,
-  space: true
+say(`NagiBotV2 by Brayan330`, {
+font: 'console',
+align: 'center',
+colors: ['blueBright']
 })
 
 protoType()
