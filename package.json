@@ -1,5 +1,5 @@
 {
-"name": "XanTV",
+"name": "NAGIBOT-MD X BRAYAN",
 "version": "2.2.0",
 "description": "Super bot de WhatsApp 2.0",
 "main": "index.js",
@@ -18,20 +18,20 @@
 "eslint": "eslint .",
 "eslintfix": "eslint --fix ."
 },
-"homepage": "https://github.com/king123XZ/XanTv",
+"homepage": "https://github.com/El-brayan502/NagiBotV2",
 "author": {
-"name": "king123XZ"
+"name": "Brayan330"
 },
 "repository": {
 "type": "git",
-"url": "git+https://github.com/king123XZ/XanTv.git"
+"url": "git+https://github.com/El-brayan502/NagiBotV2.git"
 },
 "bugs": {
-"url": "https://github.com/king123XZ/XanTv.git/issues"
+"url": "https://github.com/El-brayan502/NagiBotV2/issues"
 },
 "license": "GPL-3.0-or-later",
 "dependencies": {
-"@whiskeysockets/baileys": "github:naruyaizumi/baileys",
+"@whiskeysockets/baileys": "github:El-brayan502/baileys",
 "@adiwajshing/keyed-db": "^0.2.4",
 "@bochilteam/scraper": "^4.2.4",
 "@bochilteam/scraper-sosmed": "^1.0.5",
@@ -82,8 +82,7 @@
 "socket.io": "^4.5.2",
 "syntax-error": "^1.4.0",
 "terminal-image": "^2.0.0",
-"url-regex-safe": "^3.0.0", 
-"cfonts": "^3.3.0"
+"url-regex-safe": "^3.0.0",
 "uuid": "^10.0.0",
 "translate-google-api": "^1.0.4",
 "google-it": "^1.6.4",
