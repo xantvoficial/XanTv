@@ -11,6 +11,11 @@ Revisa nuestras cuentas disponibles 👇
       buttonText: { displayText: "🔙 Volver" },
       type: 1,
     },
+    {
+      buttonId: `${usedPrefix}COMPRAR`,
+      buttonText: { displayText: "COMPRAR" },
+      type: 1,
+    },
   ];
 
   await conn.sendMessage(m.chat, {
