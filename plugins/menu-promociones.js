@@ -19,7 +19,7 @@ Revisa nuestras cuentas disponibles 👇
   ];
 
   await conn.sendMessage(m.chat, {
-    image: { url: 'https://qu.ax/KNlQv.jpg' },
+    image: { url: 'https://i.ibb.co/cc71nFpB/IMG-20250801-WA0064.jpg' },
     caption: texto,
     footer: "🔐 XanTV - dv yer",
     buttons: buttons,
