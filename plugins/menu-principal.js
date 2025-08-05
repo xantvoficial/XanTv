@@ -22,7 +22,7 @@
   const buttons = [
     {
       buttonId: `${usedPrefix}PROMOCIONES`,
-      buttonText: { displayText: "PROMOCIONES" },
+      buttonText: { displayText: "COMPRAR" },
       type: 1,
     },
     {
