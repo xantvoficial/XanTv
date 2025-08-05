@@ -32,7 +32,7 @@
     },
     {
       buttonId: `${usedPrefix}otrascuentas`,
-      buttonText: { displayText: "📦 OTRAS CUENTAS" },
+      buttonText: { displayText: "RENOVAR" },
       type: 1,
     },
   ];
