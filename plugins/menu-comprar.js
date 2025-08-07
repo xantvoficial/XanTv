@@ -4,7 +4,8 @@ let handler = async (m, { conn }) => {
   }, { quoted: m })
   
   const buttons = [
-
+ 
+  ]
     {
       buttonId: `${usedPrefix}menu`,
       buttonText: { displayText: "💰 Métodos de Pago" },
