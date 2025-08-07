@@ -5,7 +5,7 @@ Recuerda enviarnos captura! 👩🏻‍💻
     const buttons = [
     {
       buttonId: `${usedPrefix}menu`,
-      buttonText: { displayText: "Volver al Menú" },
+      buttonText: { displayText: "🔙 Volver" },
       type: 1,
     },
 ];
