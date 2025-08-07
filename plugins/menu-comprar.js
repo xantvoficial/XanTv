@@ -17,7 +17,7 @@ Revisa nuestras cuentas disponibles 👇
       type: 1,
     },
     {
-      buttonId: `${usedPrefix}metododepago`,
+      buttonId: `${usedPrefix}comprarcuenta`,
       buttonText: { displayText: "💰 Método de Pago" },
       type: 1,
     },
