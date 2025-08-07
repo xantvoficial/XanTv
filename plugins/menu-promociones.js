@@ -13,7 +13,7 @@ Revisa nuestras cuentas disponibles 👇
     },
     {
       buttonId: `${usedPrefix}comprarcuenta`,
-      buttonText: { displayText: "COMPRAR" },
+      buttonText: { displayText: "📌 Otras Cuentas" },
       type: 1,
     },
   ];
