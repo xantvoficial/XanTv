@@ -2,7 +2,12 @@ const handler = async (m, { conn, usedPrefix, command }) => {
   const texto = `
 Recuerda enviarnos captura! 👩🏻‍💻
 `.trim();
-},
+  const buttons = [
+    {
+      buttonId: `${usedPrefix}menu`,
+      buttonText: { displayText: "🔙 Volver al Menú" },
+      type: 1,
+    },
 
   await conn.sendMessage(m.chat, {
     image: {url: 'https://i.postimg.cc/wxFHWQ27/RENOVACIONES.png'},
