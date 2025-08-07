@@ -22,5 +22,5 @@ let handler = async (m, { conn }) => {
   }
 };
 
-handler.command = ['metododepago'];
+handler.command = ['pago'];
 export default handler;
