@@ -31,7 +31,7 @@
       type: 1,
     },
     {
-      buttonId: `${usedPrefix}otrascuentas`,
+      buttonId: `${usedPrefix}renovar`,
       buttonText: { displayText: "🛒 Renovar" },
       type: 1,
     },
