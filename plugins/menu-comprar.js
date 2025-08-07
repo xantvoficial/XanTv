@@ -1,10 +1,8 @@
 const handler = async (m, { conn, usedPrefix }) => {
   const texto = `
-📢 *Promoción activas*
-
-Revisa nuestras cuentas disponibles 👇
+🔹 Selecciona una opción:
 `.trim();
-
+  
   const buttons = [
     {
       buttonId: `${usedPrefix}LISTADECUENTASENVENTAS`,
