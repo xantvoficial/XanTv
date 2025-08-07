@@ -35,6 +35,11 @@
       buttonText: { displayText: "🛒 Renovar" },
       type: 1,
     },
+    {
+      buttonId: `${usedPrefix}creador`,
+      buttonText: { displayText: "💰 Referencias" },
+      type: 1,
+    },
   ];
 
   await conn.sendMessage(m.chat, {
