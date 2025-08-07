@@ -1,6 +1,6 @@
 const handler = async (m, { conn, usedPrefix, command }) => {
   const texto = `
-🔹 Selecciona una opción:
+🔹 Recuerda enviarnos captura! 👩🏻‍💻
 `.trim();
   
   const buttons = [
