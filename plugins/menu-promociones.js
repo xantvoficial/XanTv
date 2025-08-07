@@ -16,6 +16,11 @@ Revisa nuestras cuentas disponibles 👇
       buttonText: { displayText: "📌 Otras Cuentas" },
       type: 1,
     },
+    {
+      buttonId: `${usedPrefix}comprarcuenta`,
+      buttonText: { displayText: "💰 Método de Pago" },
+      type: 1,
+    },
   ];
 
   await conn.sendMessage(m.chat, {
