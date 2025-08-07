@@ -32,7 +32,7 @@ const handler = async (m, { conn, usedPrefix, command }) => {
   }, { quoted: m })
 }
 
-handler.command = /^otrascuentas$/i
+handler.command = /^renovar$/i
 
 export default handler
 
