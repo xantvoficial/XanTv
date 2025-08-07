@@ -16,7 +16,7 @@ El buen servicio que brindo a todos los clientes que adquieren mis plataformas s
 
   // Enviar la imagen
   await conn.sendMessage(m.chat, {
-    image: { url: imageUrl }, // URL de la imagen
+    image: { url: https://i.postimg.cc/RZ4mh03v/Imagen-de-Whats-App-2025-08-07-a-las-17-21-18-1ec7b9ae.jpg}, // URL de la imagen
     caption: '¡Verifica por ti mismo nuestra trayectoria!' // Opcional, texto debajo de la imagen
   });
 }
