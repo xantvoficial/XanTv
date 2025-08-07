@@ -12,7 +12,7 @@ Revisa nuestras cuentas disponibles 👇
       type: 1,
     },
     {
-      buttonId: `${usedPrefix}comprarcuenta`,
+      buttonId: `${usedPrefix}otrascuentas`,
       buttonText: { displayText: "📌 Otras Cuentas" },
       type: 1,
     },
