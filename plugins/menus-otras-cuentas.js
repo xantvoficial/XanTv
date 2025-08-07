@@ -5,11 +5,7 @@ const handler = async (m, { conn, usedPrefix, command }) => {
 `.trim();
 
   const buttons = [
-    {
-      buttonId: `${usedPrefix}creador`,
-      buttonText: { displayText: "💰 Métodos de Pago" },
-      type: 1,
-    },
+
     {
       buttonId: `${usedPrefix}menu`,
       buttonText: { displayText: "🔙 Volver al menú" },
