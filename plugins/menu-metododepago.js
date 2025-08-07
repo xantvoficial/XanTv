@@ -1,5 +1,6 @@
 import path from 'path'; // Para manejar las rutas de los archivos
 import fs from 'fs'; // Para trabajar con archivos del sistema
+
 let handler = async (m, { conn }) => {
   try {
     // Ruta de la imagen en tu carpeta local
@@ -7,8 +8,12 @@ let handler = async (m, { conn }) => {
 
     // Verificar si el archivo existe
     if (!fs.existsSync(imagePath)) {
-      throw new Error('La imagen no se encuentra en la carpeta especificada.');
+      console.error('La imagen no se encuentra en la carpeta especificada.');
+      return;
     }
+
+    // Imprimir la ruta para verificar
+    console.log('Ruta de la imagen:', imagePath);
 
     // Enviar la imagen
     await conn.sendMessage(m.chat, {
@@ -22,5 +27,5 @@ let handler = async (m, { conn }) => {
   }
 };
 
-handler.command = ['pago'];
+handler.command = ['pago']; // El comando que activará el envío de la imagen
 export default handler;
