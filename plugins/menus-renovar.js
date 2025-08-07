@@ -1,8 +1,8 @@
 const handler = async (m, { conn, usedPrefix, command }) => {
   const texto = `
-
+🔹 Selecciona una opción:
 `.trim();
-
+  
   const buttons = [
 
     {
