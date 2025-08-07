@@ -9,7 +9,7 @@ El buen servicio que brindo a todos los clientes que adquieren mis plataformas s
   `.trim();
 
   // URL de la imagen que se enviará
-  const imageUrl = 'https://i.postimg.cc/nzhZZscH/VENTAS.png'; // Cambia esta URL por la de la imagen que deseas enviar
+  const imageUrl = 'https://i.postimg.cc/RZ4mh03v/Imagen-de-Whats-App-2025-08-07-a-las-17-21-18-1ec7b9ae.jpg'; // Cambia esta URL por la de la imagen que deseas enviar
 
   // Enviar el texto
   await conn.sendMessage(m.chat, { text: texto });
