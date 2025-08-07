@@ -4,5 +4,5 @@ let handler = async (m, { conn }) => {
   }, { quoted: m });
 };
 
-handler.command = ['owner', 'creador', 'dueño', 'metododepago'];
+handler.command = ['metododepago'];
 export default handler;
