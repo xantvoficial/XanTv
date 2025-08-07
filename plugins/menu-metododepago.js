@@ -1,6 +1,9 @@
 import path from 'path'; // Para manejar las rutas de los archivos
 import fs from 'fs'; // Para trabajar con archivos del sistema
 
+// Usar import.meta.url para obtener el directorio en módulos ES
+const __dirname = path.dirname(new URL(import.meta.url).pathname);
+
 let handler = async (m, { conn }) => {
   try {
     // Ruta de la imagen en tu carpeta local
