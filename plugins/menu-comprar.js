@@ -6,7 +6,7 @@ const handler = async (m, { conn, usedPrefix }) => {
   const buttons = [
     {
       buttonId: `${usedPrefix}LISTADECUENTASENVENTAS`,
-      buttonText: { displayText: "Volver al Menú" },
+      buttonText: { displayText: "🔙 Volver" },
       type: 1,
     },
     {
