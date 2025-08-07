@@ -1,6 +1,6 @@
 let handler = async (m, { conn }) => {
   await conn.sendMessage(m.chat, {
-    image: { url: 'https://iili.io/FPVcig4.md.jpg' }
+    image: { url: 'https://ibb.co/RT0fV0xT' }
   }, { quoted: m })
 }
 
