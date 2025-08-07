@@ -3,6 +3,15 @@ let handler = async (m, { conn }) => {
     image: {url: 'https://i.postimg.cc/hPQhFmNc/2.png'}
   }, { quoted: m })
 }
+🔹 Selecciona una opción:
+`.trim();
+
+  const buttons = [
+    {
+      buttonId: `${usedPrefix}PROMOCIONES`,
+      buttonText: { displayText: "🛍 Métodos de Pago" },
+      type: 1,
+    },
 
 handler.command = ['owner', 'creador', 'dueño', 'comprarcuenta']
 export default handler
