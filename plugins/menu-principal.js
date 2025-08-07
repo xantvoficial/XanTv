@@ -22,17 +22,17 @@
   const buttons = [
     {
       buttonId: `${usedPrefix}PROMOCIONES`,
-      buttonText: { displayText: "COMPRAR" },
+      buttonText: { displayText: "🛍 Comprar" },
       type: 1,
     },
     {
       buttonId: `${usedPrefix}grupooficial`,
-      buttonText: { displayText: "GRUPO OFICAL" },
+      buttonText: { displayText: "💎 Grupo Vip" },
       type: 1,
     },
     {
       buttonId: `${usedPrefix}otrascuentas`,
-      buttonText: { displayText: "RENOVAR" },
+      buttonText: { displayText: "🛒 Renovar" },
       type: 1,
     },
   ];
