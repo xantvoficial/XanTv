@@ -1,10 +1,6 @@
 const handler = async (m, { conn, usedPrefix, command }) => {
   const texto = `
 
-    image: {url: 'https://i.postimg.cc/wxFHWQ27/RENOVACIONES.png'}
-  }, { quoted: m })
-}
-
 🔹 Selecciona una opción:
 `.trim();
 
@@ -22,7 +18,7 @@ const handler = async (m, { conn, usedPrefix, command }) => {
   ];
 
   await conn.sendMessage(m.chat, {
-    image: { url: 'https://tinyurl.com/296obofm' },
+    image: {url: 'https://i.postimg.cc/wxFHWQ27/RENOVACIONES.png'},
     caption: texto,
     footer: "🔐 XanTV - dv yer",
     buttons: buttons,
