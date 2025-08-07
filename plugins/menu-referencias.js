@@ -8,9 +8,6 @@ El buen servicio que brindo a todos los clientes que adquieren mis plataformas s
 
 ¡Verifica por ti mismo nuestra trayectoria!
 
-🔹 *Selecciona una opción para más información.*
-        `.trim();
-
   // Enviar solo el texto
   await conn.sendMessage(m.chat, { text: texto });
 }
