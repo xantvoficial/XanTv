@@ -36,7 +36,7 @@
       type: 1,
     },
     {
-      buttonId: `${usedPrefix}creador`,
+      buttonId: `${usedPrefix}referencias`,
       buttonText: { displayText: "🔍 Referencias" },
       type: 1,
     },
