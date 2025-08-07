@@ -3,19 +3,11 @@ const handler = async (m, { conn, usedPrefix, command }) => {
 Recuerda enviarnos captura! 👩🏻‍💻
 `.trim();
   
-  const buttons = [
-
-    {
-      buttonId: `${usedPrefix}menu`,
-      buttonText: { displayText: "🔙 Volver al menú" },
-      type: 1,
-    },
-  ];
 
   await conn.sendMessage(m.chat, {
     image: {url: 'https://i.postimg.cc/wxFHWQ27/RENOVACIONES.png'},
     caption: texto,
-    footer: "🔐 XanTV - dv yer",
+    footer: "",
     buttons: buttons,
     headerType: 4,
     contextInfo: {
