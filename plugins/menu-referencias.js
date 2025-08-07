@@ -17,11 +17,7 @@ El buen servicio que brindo a todos los clientes que adquieren mis plataformas s
   // Enviar la imagen
   await conn.sendMessage(m.chat, {
     image: { url: imageUrl }, // URL de la imagen
-    caption: 'El buen servicio que brindo a todos los clientes que adquieren mis plataformas se demuestra en mi página! 🔍
-
-📲 https://www.instagram.com/xann.tv
-
-¡Verifica por ti mismo nuestra trayectoria!' // Opcional, texto debajo de la imagen
+    caption: '¡Verifica por ti mismo nuestra trayectoria!' // Opcional, texto debajo de la imagen
   });
 }
 
