@@ -1,4 +1,6 @@
-  const handler = async (m, { conn, usedPrefix, command }) => {
+import fs from 'fs'
+
+const handler = async (m, { conn, usedPrefix, command }) => {
   const texto = `
 *📽️CUENTAS STREAMING📽️*
 
@@ -43,7 +45,7 @@
   ];
 
   await conn.sendMessage(m.chat, {
-    image: { url: 'https://qu.ax/mOkkb.jpg' },
+    image: fs.readFileSync('./imagenes/imagen-menu.jpg'),
     caption: texto,
     footer: "🔐 XanTv - creador dv yer",
     buttons: buttons,
