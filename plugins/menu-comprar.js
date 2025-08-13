@@ -1,8 +1,10 @@
+import fs from 'fs'
+
 const handler = async (m, { conn, usedPrefix }) => {
   const texto = `
 🔹 Selecciona una opción:
 `.trim();
-  
+
   const buttons = [
     {
       buttonId: `${usedPrefix}LISTADECUENTASENVENTAS`,
@@ -22,7 +24,7 @@ const handler = async (m, { conn, usedPrefix }) => {
   ];
 
   await conn.sendMessage(m.chat, {
-    image: { url: 'https://iili.io/FPMK9Jp.md.jpg' },
+    image: fs.readFileSync('./imagenes/comprar.jpg'),
     caption: texto,
     footer: "🔐 XanTV - dv yer",
     buttons: buttons,
