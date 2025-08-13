@@ -10,7 +10,7 @@ El buen servicio que brindo a todos los clientes que adquieren mis plataformas s
   `.trim();
 
   await conn.sendMessage(m.chat, {
-    image: fs.readFileSync('./imagenes/referencia.jpg'),
+    image: fs.readFileSync('./imagenes/referencias.jpg'),
     caption: texto
   });
 }
