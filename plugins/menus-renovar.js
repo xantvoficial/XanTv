@@ -1,16 +1,20 @@
+import fs from 'fs'
+
 const handler = async (m, { conn, usedPrefix, command }) => {
   const texto = `
 Recuerda enviarnos captura! 👩🏻‍💻
 `.trim();
-    const buttons = [
+
+  const buttons = [
     {
       buttonId: `${usedPrefix}menu`,
       buttonText: { displayText: "🔙 Volver" },
       type: 1,
     },
-];
+  ];
+
   await conn.sendMessage(m.chat, {
-    image: {url: 'https://i.postimg.cc/wxFHWQ27/RENOVACIONES.png'},
+    image: fs.readFileSync('./imagenes/renovar.jpg'),
     caption: texto,
     footer: "",
     buttons: buttons,
@@ -19,8 +23,7 @@ Recuerda enviarnos captura! 👩🏻‍💻
       externalAdReply: {
         title: "🎥 XanTV - dv yer 🌌",
         body: "Venta de cuentas premium",
-        sourceUrl: "https://github.com/king123XZ/XanTv", // Cambia por tu enlace si quieres
-        //thumbnail: { url: 'https://qu.ax/JULOR.jpg' },
+        sourceUrl: "https://github.com/king123XZ/XanTv", // Podés cambiarlo si querés
         mediaType: 1,
         renderLargerThumbnail: true
       }
@@ -31,4 +34,3 @@ Recuerda enviarnos captura! 👩🏻‍💻
 handler.command = /^renovar$/i
 
 export default handler
-
