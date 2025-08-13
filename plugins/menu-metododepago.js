@@ -1,13 +1,14 @@
+import fs from 'fs'
+
 const handler = async (m, { conn, usedPrefix, command }) => {
-  // Enviar solo la imagen con la nueva URL
+  // Enviar solo la imagen
   await conn.sendMessage(m.chat, {
-    image: { url: 'https://i.postimg.cc/nzhZZscH/VENTAS.png' }, 
-    caption: 'Sigue los pasos indicados!👨🏻‍💻', // 
-    footer: "🔐 XanTV - dv yer", 
+    image: fs.readFileSync('./imagenes/metododepago.jpg'),
+    caption: 'Sigue los pasos indicados!👨🏻‍💻',
+    footer: "🔐 XanTV - dv yer",
   }, { quoted: m })
 }
 
-handler.command = /^metododepago$/i 
+handler.command = /^metododepago$/i
 
 export default handler
-  
