@@ -13,7 +13,7 @@ const handler = async (m, { conn, usedPrefix }) => {
     },
     {
       buttonId: `${usedPrefix}otrascuentas`,
-      buttonText: { displayText: "📌 Otras Cuentas" },
+      buttonText: { displayText: "📌 Promociones" },
       type: 1,
     },
     {
