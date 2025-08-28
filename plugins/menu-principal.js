@@ -1,4 +1,4 @@
-// plugins/menu.js
+// plugins/menu-principal.js
 import fs from 'fs'
 
 const handler = async (m, { conn, usedPrefix }) => {
@@ -22,26 +22,30 @@ const handler = async (m, { conn, usedPrefix }) => {
 🔹 Selecciona una opción:
 `.trim()
 
-  await conn.sendMessage(m.chat, {
-    image: fs.readFileSync('./imagenes/imagen-menu.jpg'),
-    caption: texto,
-    footer: '🔐 XanTv - creador dv yer',
-    templateButtons: [
-      { index: 1, quickReplyButton: { displayText: '🛍 Comprar',      id: `${usedPrefix}promociones` } },
-      { index: 2, quickReplyButton: { displayText: '💎 Grupo Vip',     id: `${usedPrefix}grupooficial` } },
-      { index: 3, quickReplyButton: { displayText: '🛒 Renovar',       id: `${usedPrefix}renovar` } },
-      { index: 4, quickReplyButton: { displayText: '🔍 Referencias',   id: `${usedPrefix}referencias` } },
-    ],
-    contextInfo: {
-      externalAdReply: {
-        title: 'XanTv 🌌',
-        body: 'Calidad, confianza y buen precio. Creador: dv yer',
-        thumbnailUrl: 'https://qu.ax/GKVqa.jpg',
-        mediaType: 1,
-        renderLargerThumbnail: true
+  await conn.sendMessage(
+    m.chat,
+    {
+      image: fs.readFileSync('./imagenes/imagen-menu.jpg'),
+      caption: texto,
+      footer: '🔐 XanTv - creador dv yer',
+      templateButtons: [
+        { index: 1, quickReplyButton: { displayText: '🛍 Comprar',       id: `${usedPrefix}promociones` } },
+        { index: 2, quickReplyButton: { displayText: '💎 Grupo Vip',      id: `${usedPrefix}grupooficial` } },
+        { index: 3, quickReplyButton: { displayText: '🛒 Renovar',        id: `${usedPrefix}renovar` } },
+        { index: 4, quickReplyButton: { displayText: '🔍 Referencias',    id: `${usedPrefix}referencias` } },
+      ],
+      contextInfo: {
+        externalAdReply: {
+          title: 'XanTv 🌌',
+          body: 'Calidad, confianza y buen precio. Creador: dv yer',
+          thumbnailUrl: 'https://qu.ax/GKVqa.jpg',
+          mediaType: 1,
+          renderLargerThumbnail: true
+        }
       }
-    }
-  }, { quoted: m })
+    },
+    { quoted: m } // <-- Aquí estaba el error: antes tenías msg
+  )
 }
 
 handler.help = ['LISTADECUENTASENVENTAS', 'MENU']
